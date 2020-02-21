@@ -1,4 +1,4 @@
-{{- if eq .Values.acceptLicenseAgreement "yes") (contains "enterprise" .Values.imageTag)}}
+{{- if (eq .Values.acceptLicenseAgreement "yes") (contains "enterprise" .Values.imageTag)}}
 ####   ERROR: You did not accept the Neo4j Enterprise License. ####
 ####   ERROR: Please set acceptLicenseAgreement to yes.        ####
 ###################################################################
